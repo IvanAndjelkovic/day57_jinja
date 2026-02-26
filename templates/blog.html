@@ -1,0 +1,19 @@
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <title>Blog</title>
+    </head>
+    <body>
+        {% for post in posts %}
+            {% if post["id"]==2 %}
+                <h1>{{post["title"]}}</h1>
+                <h2>{{post["subtitle"]}}</h2>
+                <h3>{{post["body"]}}</h3>
+            {% endif %}
+        {% endfor %}
+
+    </body>
+    <footer>
+        <p>Copyright 2026 by Ivan Andelkovic</p>
+    </footer>
+</html>
